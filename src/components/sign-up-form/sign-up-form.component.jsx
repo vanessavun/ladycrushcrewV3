@@ -15,7 +15,14 @@ const SignUpForm = () => {
     const [formFields, setFormFields] = useState(defaultFormFields);
     const { displayName, email, password, confirmPassword } = formFields;
 
-    console.log(formFields);
+    const resetFormFields = () => {
+        setFormFields(defaultFormFields);
+    }
+
+    const handleChange = (event) => {
+        const { name, value } = event.target;
+        setFormFields({...formFields, [name]: value});
+    }
 
     //Generate user document inside of external service, triggers on Submit Handler
     const handleSubmit = async(event) => {
@@ -29,7 +36,7 @@ const SignUpForm = () => {
         try {
             const {user} = await createAuthUserEmailAndPassword(email, password);
             await createUserDocumentFromAuth(user, { displayName });
-                
+            resetFormFields();
         } catch(error){
             if(error.code === 'auth/email-already-in-use') {
                 alert('Cannot created user. Email already in use.');
@@ -39,11 +46,6 @@ const SignUpForm = () => {
             
         }
         
-    }
-
-    const handleChange = (event) => {
-        const { name, value } = event.target;
-        setFormFields({...formFields, [name]: value});
     }
 
     return (
