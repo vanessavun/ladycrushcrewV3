@@ -3,7 +3,8 @@ import {
     getAuth, 
     signInWithRedirect, 
     signInWithPopup, 
-    GoogleAuthProvider
+    GoogleAuthProvider,
+    createUserWithEmailAndPassword
  } from 'firebase/auth';
 import {
     getFirestore,
@@ -20,24 +21,23 @@ const firebaseConfig = {
     messagingSenderId: "680742435266",
     appId: "1:680742435266:web:a037e9081b3e009621fe5b"
 };
-
-
 const firebaseApp = initializeApp(firebaseConfig);
+
+//GOOGLE PROVIDER WITH POPUP AND WITH REDIRECT
 const googleProvider = new GoogleAuthProvider();
 googleProvider.setCustomParameters({
     prompt: 'select_account'
 });
-
 export const auth = getAuth();
 export const signInWithGooglePopup = () => signInWithPopup(auth, googleProvider);
 export const signInWithGoogleRedirect = () => signInWithRedirect(auth, googleProvider);
+export const db = getFirestore(firebaseApp);
 
-export const db = getFirestore();
-
-export const createUserDocumentFromAuth = async(userAuth) => {
+//Create document in Firebase
+export const createUserDocumentFromAuth = async(userAuth, additionalInfo = {}) => {
+    if (!userAuth) return;
     const userDocRef = doc(db, 'users', userAuth.uid);
     const userSnapshot = await getDoc(userDocRef);
-
     if(!userSnapshot.exists()) {
         const { displayName, email } = userAuth;
         const createdAt = new Date();
@@ -45,11 +45,19 @@ export const createUserDocumentFromAuth = async(userAuth) => {
             await setDoc(userDocRef, {
                 displayName,
                 email,
-                createdAt
-            })
+                createdAt,
+                ...additionalInfo,
+            });
         } catch(error) {
             console.log('error creating the user', error.message);
         }
     }
     return userDocRef;
+}
+
+//NON-GOOGLE PROVIDER: EMAIL AND PASSWORD
+export const createAuthUserEmailAndPassword = async (email, password) => {
+    if(!email || !password) return;
+    //Firebase function gives us back authenticated user and an auth object
+    return await createUserWithEmailAndPassword(auth, email, password);
 }
