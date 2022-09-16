@@ -77,4 +77,3 @@ export const signOutUser = async() => signOut(auth);
 //Firebase listener helper function
 export const onAuthStateChangedListener = (callback) =>  
     onAuthStateChanged(auth, callback);
-
