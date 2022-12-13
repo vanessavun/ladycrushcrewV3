@@ -2,7 +2,7 @@ import { CART_ACTION_TYPES } from "./cart.types";
 import { createAction } from "../../utils/reducer/reducer.utils";
 
 //Helper functions
-export const addCartItem = (cartItems, productToAdd) => {
+const addCartItem = (cartItems, productToAdd) => {
   const existingItem = cartItems.find((item) => item.id === productToAdd.id);
   if (existingItem) {
     return cartItems.map((item) =>
