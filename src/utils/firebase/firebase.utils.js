@@ -58,13 +58,10 @@ export const getCategoriesAndDocuments = async() => {
     //Create helper functions to isolate the areas that our App interfaces
     const collectionRef = collection(db, 'categories');
     const q = query(collectionRef);
+
     const querySnapshot = await getDocs(q);
-    const categoryMap = querySnapshot.docs.reduce((acc, docSnapShot) => {
-        const { title, items } = docSnapShot.data();
-        acc[title.toLowerCase()] = items;
-        return acc;
-    }, {});
-    return categoryMap;
+    return querySnapshot.docs.map(docSnapshot => docSnapshot.data());
+    //Categories as an array
 }
 
 //Create document in Firebase
