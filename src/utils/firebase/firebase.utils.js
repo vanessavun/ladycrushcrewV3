@@ -83,7 +83,7 @@ export const createUserDocumentFromAuth = async(userAuth, additionalInfo = {}) =
             console.log('error creating the user', error.message);
         }
     }
-    return userDocRef;
+    return userSnapshot;
 }
 
 //NON-GOOGLE PROVIDER: EMAIL AND PASSWORD
@@ -105,3 +105,17 @@ export const signOutUser = async() => signOut(auth);
 //Firebase listener helper function
 export const onAuthStateChangedListener = (callback) =>  
     onAuthStateChanged(auth, callback);
+
+//Observable listener for signed in users to promise based function call
+export const getCurrentUser = () => {
+    return new Promise((resolve, reject) => {
+        const unsubscribe = onAuthStateChanged(
+            auth,
+            (userAuth) => {
+                unsubscribe();
+                resolve(userAuth);
+            },
+            reject
+        )
+    })
+}
