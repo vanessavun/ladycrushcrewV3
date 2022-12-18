@@ -1,4 +1,4 @@
-import "./checkout-item.styles.jsx";
+import "./checkout-item.styles";
 
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -16,9 +16,15 @@ import {
   QuantityArrow,
   QuantityValue,
   RemoveButton,
-} from "./checkout-item.styles.jsx";
+} from "./checkout-item.styles";
 
-const CheckoutItem = ({ cartItem }) => {
+import { CartItem } from "../../store/cart/cart.types.js";
+
+type CheckoutItemProps = {
+  cartItem: CartItem;
+}
+
+const CheckoutItem = ({ cartItem }: CheckoutItemProps) => {
   const cartItems = useSelector(selectCartItems);
   const { name, imageUrl, price, quantity } = cartItem;
   const dispatch = useDispatch();

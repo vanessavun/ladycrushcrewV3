@@ -7,8 +7,13 @@ import Button, { BUTTON_TYPE_CLASSES } from '../button/button.component';
 import { ProductCardContainer,
         Footer, Name, Price, } from './product-card.styles';
 
+import { CategoryItem } from '../../store/categories/category.types';
 
-const ProductCard = ({ product }) => {
+type ProductCardProps = {
+    product: CategoryItem;
+}
+
+const ProductCard = ({ product }: ProductCardProps) => {
     const { name, price, imageUrl } = product;
     const dispatch = useDispatch();
     const cartItems = useSelector(selectCartItems);
