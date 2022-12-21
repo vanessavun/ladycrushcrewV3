@@ -1,8 +1,12 @@
-import React from 'react'
+import React from 'react';
+import PageHeader from '../../components/page-header/page-header.component';
+import { AboutContainer } from '../about/about-styles';
 
 function Events() {
   return (
-    <div>Events</div>
+    <AboutContainer>
+      <PageHeader title="Events" emote="📅" />
+    </AboutContainer>
   )
 }
 

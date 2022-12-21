@@ -1,26 +1,21 @@
 import {
   AboutContainer,
-  AboutHeader,
-  AboutEmote,
   AboutBody,
   AboutImg,
   AboutImgContainer,
   AboutDescription,
 } from "./about-styles";
+import PageHeader from "../../components/page-header/page-header.component";
 import { Slide, Fade } from "react-awesome-reveal";
 
 function About() {
   return (
     <>
       <AboutContainer>
-        <AboutHeader>
-          <h1>
-            About LADYCRVSHCREW<AboutEmote>🥳</AboutEmote>
-          </h1>
-        </AboutHeader>
+        <PageHeader title="About LADYCRVSHCREW" emote="🥳" />
         <AboutBody>
           <AboutDescription>
-            <Slide cascade>
+            <Fade cascade>
               <div className="about-mission">
                 <h2>Mission</h2>
                 <p>
@@ -65,7 +60,7 @@ function About() {
                   <li>Yosemite National Park</li>
                 </ul>
               </div>
-            </Slide>
+            </Fade>
           </AboutDescription>
           <AboutImgContainer>
             <Fade>
@@ -73,40 +68,30 @@ function About() {
             </Fade>
           </AboutImgContainer>
         </AboutBody>
-        <AboutHeader>
-          <h1>
-            Leaders <AboutEmote>👸🏽</AboutEmote>
-          </h1>
-        </AboutHeader>
+        <PageHeader title="Leader" emote="👸🏽" />
         <AboutBody>
           <AboutDescription>
             <div className="leaders">
               <Slide cascade>
                 <div className="leader">
                   <h2>Sabrina</h2>
-                  <p>Merch, Sales, & Marketing</p>
+                  <p>Founder, Leader: Merch, Sales, & Marketing</p>
                 </div>
                 <div className="leader">
                   <h2>Maggie</h2>
-                  <p>Information Technology & Special Events</p>
+                  <p>Leader: Information Technology & Special Events</p>
                 </div>
                 <div className="leader">
                   <h2>April</h2>
-                  <p>Social Media, Partnerships, and Community Liaison</p>
+                  <p>Leader: Social Media, Partnerships, and Community Liaison</p>
                 </div>
               </Slide>
             </div>
           </AboutDescription>
         </AboutBody>
-        <AboutHeader>
-          <h1>
-            Ambassadors <AboutEmote>🏆</AboutEmote>
-          </h1>
-        </AboutHeader>
+        <PageHeader title={"Ambassadors"} emote={"🏆"} />
         <AboutBody>
-          <AboutDescription>
-
-          </AboutDescription>
+          <AboutDescription></AboutDescription>
         </AboutBody>
       </AboutContainer>
     </>

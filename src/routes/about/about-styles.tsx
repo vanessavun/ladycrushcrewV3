@@ -8,13 +8,6 @@ export const AboutContainer = styled.div`
     justify-content: center;
 `
 
-export const AboutHeader = styled.div`
-    justify-content: center;
-`
-
-export const AboutEmote = styled.span `
-    font-family: 'Noto Color Emoji', sans-serif;
-`
 
 export const AboutBody = styled.div`
     width: 70%;
