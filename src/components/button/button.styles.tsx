@@ -9,10 +9,10 @@ export const BaseButton = styled.button`
     line-height: 50px;
     padding: 0 35px 0 35px;
     font-size: 15px;
-    background-color: black;
-    color: white;
+    background-color: #89b0ae;
+    color: black;
     text-transform: uppercase;
-    font-family: 'Roboto Condensed';
+    font-family: 'Plus Jakarta Sans';
     font-weight: bolder;
     border: none;
     cursor: pointer;
@@ -22,8 +22,8 @@ export const BaseButton = styled.button`
 
     &:hover {
         background-color: white;
-        color: black;
-        border: 1px solid black;
+        color: #89b0ae;
+        border: 1px solid #89b0ae;
     }
 `;
 
@@ -39,12 +39,12 @@ export const GoogleSignInButton = styled(BaseButton)`
 
 export const InvertedButton = styled(BaseButton)`
     background-color: white;
-    color: black;
-    border: 1px solid black;
+    color: #89b0ae;
+    border: 1px solid #89b0ae;
 
     &:hover {
-    background-color: black;
-    color: white;
+    background-color: #89b0ae;
+    color: black;
     border: none;
 }
 `;

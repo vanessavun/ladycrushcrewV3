@@ -1,18 +1,21 @@
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
 
+export const Logo = styled.img`
+    max-width: 100%;
+    width: 70px;
+`
+
 export const NavigationContainer = styled.div`
-    height: 70px;
+    height: 80px;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 25px;
+    padding: 5px;
 `
 
 export const LogoContainer = styled(Link)`
     height: 100%;
-    width: 70px;
-    padding: 25px;
 `
 
 export const NavLinks = styled.div`
@@ -21,10 +24,14 @@ export const NavLinks = styled.div`
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    font-weight: bold;
 `
 
 export const NavLink = styled(Link)`
-    padding: 5px;
+    margin: 5px;
     cursor: pointer;
+    &:hover {
+        color: #89b0ae;
+    }
 `
 

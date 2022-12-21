@@ -25,13 +25,23 @@ import {
 import { Category } from "../../store/categories/category.types";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCio8-Xn1Bmb9uJs2eOaf-TkuiupphHiuU",
-  authDomain: "crwn-clothing-db-93df5.firebaseapp.com",
-  projectId: "crwn-clothing-db-93df5",
-  storageBucket: "crwn-clothing-db-93df5.appspot.com",
-  messagingSenderId: "680742435266",
-  appId: "1:680742435266:web:a037e9081b3e009621fe5b",
+  apiKey: "AIzaSyA_8qd3YQ5iboRSCUDUd-nwpvpi9yJ8Izc",
+  authDomain: "ladycrushcrew-e33b8.firebaseapp.com",
+  projectId: "ladycrushcrew-e33b8",
+  storageBucket: "ladycrushcrew-e33b8.appspot.com",
+  messagingSenderId: "869692171353",
+  appId: "1:869692171353:web:1808f14e049772bd4afd48",
+  measurementId: "G-P3XLR919JW"
 };
+
+// const firebaseConfig = {
+//   apiKey: "AIzaSyCio8-Xn1Bmb9uJs2eOaf-TkuiupphHiuU",
+//   authDomain: "crwn-clothing-db-93df5.firebaseapp.com",
+//   projectId: "crwn-clothing-db-93df5",
+//   storageBucket: "crwn-clothing-db-93df5.appspot.com",
+//   messagingSenderId: "680742435266",
+//   appId: "1:680742435266:web:a037e9081b3e009621fe5b"
+// };
 const firebaseApp = initializeApp(firebaseConfig);
 
 //GOOGLE PROVIDER WITH POPUP AND WITH REDIRECT

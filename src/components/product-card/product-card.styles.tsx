@@ -4,14 +4,16 @@ export const ProductCardContainer = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  height: 350px;
+  height: 500px;
   align-items: center;
   position: relative;
 
   img {
-    width: 100%;
-    height: 95%;
+    max-width: 100%;
+    width: 400px;
+    height: 90%;
     object-fit: cover;
+    object-position: center;
     margin-bottom: 5px;
   }
 
@@ -19,7 +21,7 @@ export const ProductCardContainer = styled.div`
     width: 80%;
     opacity: 0.7;
     position: absolute;
-    top: 255px;
+    top: 250px;
     display: none;
   }
 
