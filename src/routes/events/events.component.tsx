@@ -6,6 +6,7 @@ function Events() {
   return (
     <AboutContainer>
       <PageHeader title="Events" emote="📅" />
+      <h2>No events planned.</h2>
     </AboutContainer>
   )
 }
