@@ -1,27 +1,39 @@
-# React Capstone Project: Crown Clothing
+# LADYCRUSHCREW: a real local climbing community
 
-This project is the capstone project for the Complete React Course at Zero to Mastery Academy.
+This personal project is website for a real local climbing community for ladies and non-binary climbers. Lady Crush Crew is established in 2018 by local climbers in the San Francisco Bay Area to create a safe space for climbing in a male-dominated climbing scene. 
+
+As a freelance webmaster, I personally created the entire current [website](https://ladycrushcrew.com/) through Squarespace to ensure for the community's future expansions and growth. Their original website was made with [Wix](https://ladycrushcrew.wixsite.com/website) and they handled online purchases through email and Paypal payment requests.
+
+For an easier business transaction for the shop, I created the Squarespace website which has a built in payment system. Other important features included were an event calendar, event registration, waivers, volunteer onboarding through a private page, blogs, donation page, contact form and volunteer sign up.
+
+This project is the next step in creating the website from scratch through React and Typescript.
+
+## Installation
+```base
+yarn 
+```
 
 ## Lessons learned
 
-* Routing
-* Firebase authentication
-* State management
-* Observer pattern
-* Firebase database storage
+* React Routing
+* State management with Redux, Saga
 * Reducers
-* Performance optimizations
-* Mobile security
+* Firebase authentication (Google and Non-Google)
+* Firebase database storage
+* Observer pattern
+* Performance optimizations (caching items in the cart)
+* How to organize code as the code base gets bigger
 
-## Technologies and tools
+## Full List of Technologies and Tools
 
 * React
 * Firebase
-* SaSS
 * Netlify
-* Redux
+* Redux, Saga
 * Stripe
-* Typescript
-* GraphQL and Apollo
+* Javascript to Typescript
+* Yarn
+* Styled-components
+* Sass
+* React-Awesome-Reveal
 
-# ladycrushcrewV3
