@@ -31,7 +31,7 @@ function Footer() {
             <Link to='/contact'>Email</Link>
           </Column>
           <Column>
-            <img src={Logo} />
+            <img src={Logo} alt="Logo" />
           </Column>
         </Row>
         <Row>© 2022 Copyright LadyCrushCrew | Coded with 💗 by Vanessa Vun</Row>
