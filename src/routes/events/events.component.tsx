@@ -1,13 +1,15 @@
 import React from 'react';
 import PageHeader from '../../components/page-header/page-header.component';
-import { AboutContainer } from '../about/about-styles';
+import Footer from '../../components/footer/footer.component';
+import { EventsContainer } from './events-styles';
 
 function Events() {
   return (
-    <AboutContainer>
+    <EventsContainer>
       <PageHeader title="Events" emote="📅" />
       <h2>No events planned.</h2>
-    </AboutContainer>
+      <Footer />
+    </EventsContainer>
   )
 }
 

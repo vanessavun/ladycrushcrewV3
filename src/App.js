@@ -9,6 +9,7 @@ import CheckOut from './routes/checkout/checkout.component';
 import About from "./routes/about/about.component";
 import Events from "./routes/events/events.component";
 import Volunteer from "./routes/volunteer/volunteer.component";
+import Contact from "./routes/contact/contact.component";
 import { checkUserSession } from "./store/user/user.action";
 import { useDispatch } from "react-redux";
 
@@ -29,6 +30,7 @@ function App() {
         <Route path='shop/*' element={<Shop />} />
         <Route path='auth' element={<Authentication />} />
         <Route path='checkout' element={<CheckOut />} />
+        <Route path='contact' element={<Contact />} />
       </Route>
     </Routes>
   )

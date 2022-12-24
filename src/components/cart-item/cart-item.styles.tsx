@@ -8,6 +8,9 @@ export const CartItemContainer = styled.div`
 
     img {
         width: 30%;
+        height: 70px;
+        object-fit: cover;
+        object-position: center;
     }
 `;
 
