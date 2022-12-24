@@ -43,6 +43,7 @@ const CheckOut = () => {
       ))}
       <Total>Total: ${total}</Total>
       <PaymentForm />
+      <p>Use "4242 4242 4242 4242" test card & valid expiration dates and zip code</p>
     </CheckoutContainer>
   );
 };
