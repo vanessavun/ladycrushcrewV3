@@ -27,7 +27,7 @@ function Footer() {
           </Column>
           <Column>
             <h4>Contact Us</h4>
-            <a href="https://www.instagram.com/ladycrushcrew/" target="_blank">Instagram</a>
+            <a href="https://www.instagram.com/ladycrushcrew/" target="_blank" rel="noreferrer">Instagram</a>
             <Link to='/contact'>Email</Link>
           </Column>
           <Column>

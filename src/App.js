@@ -1,6 +1,8 @@
 import { useEffect } from "react";
 import { Routes, Route } from 'react-router-dom';
 
+import { GlobalStyle } from "./global.styles";
+
 import Home from "./routes/home/home.component";
 import Navigation from "./routes/navigation/navigation.component";
 import Authentication from "./routes/authentication/authentication.component";
@@ -21,6 +23,8 @@ function App() {
   }, [dispatch]);
   
   return (
+    <>
+    <GlobalStyle />
     <Routes>
       <Route path='/' element={<Navigation />}>
         <Route index element={<Home />} />
@@ -33,6 +37,7 @@ function App() {
         <Route path='contact' element={<Contact />} />
       </Route>
     </Routes>
+    </>
   )
 };
 
