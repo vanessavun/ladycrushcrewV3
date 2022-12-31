@@ -15,7 +15,7 @@ const categories: DirectoryCategory[] = [
   {
     id: 1,
     title: "tanks",
-    imageUrl: "https://i.ibb.co/M7qxXmR/20200308-LLC-Indian-Rock-07625.jpg",
+    imageUrl: "https://i.ibb.co/16tgk2K/20200308-LLC-Indian-Rock-07625.jpg",
     route: "shop/tanks",
   },
   {

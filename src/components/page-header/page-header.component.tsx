@@ -1,4 +1,3 @@
-import { FC } from 'react';
 import { PageHeaderDiv, PageEmote } from './page-header-styles';
 
 type PageHeaderType = {
