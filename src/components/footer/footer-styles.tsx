@@ -1,11 +1,16 @@
 import styled from "styled-components";
 
 export const FooterStyle = styled.div`
+  color: white;
   padding: 1rem;
   background-color: #555b6e;
   width: 100%;
   height: 240px;
   margin-top: auto;
+
+  @media screen and (max-width: 600px) {
+    height: fit-content;
+  }
 `;
 
 export const Links = styled.div`
@@ -14,6 +19,11 @@ export const Links = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media screen and (max-width: 600px) {
+    justify-content: initial;
+    align-items: initial;
+  }
 `
 
 export const Column = styled.div`
@@ -21,6 +31,10 @@ export const Column = styled.div`
   flex-direction: column;
   margin: 10px;
   padding: 0 10px;
+
+  & a {
+    color: white;
+  }
 
   & p {
     margin: 0px;
@@ -31,7 +45,7 @@ export const Column = styled.div`
   }
 
   & img {
-    width: 100%;
+    width: 70px;
     height: 70px;
   }
 
@@ -47,5 +61,9 @@ export const Row = styled.div`
 
   & p {
     margin: 0;
+  }
+
+  @media screen and (max-width: 600px) {
+      flex-direction: column;
   }
 `;

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { FooterStyle, Column, Row, Links } from "./footer-styles";
 
 function Footer() {
+  const currentYear = new Date().getFullYear();
   return (
     <FooterStyle>
       <Links>
@@ -34,7 +35,7 @@ function Footer() {
             <img src={Logo} alt="Logo" />
           </Column>
         </Row>
-        <Row>© 2022 Copyright LadyCrushCrew | Coded with 💗 by Vanessa Vun</Row>
+        <Row>©{currentYear} Copyright LadyCrushCrew | Coded with 💗 by Vanessa Vun</Row>
       </Links>
     </FooterStyle>
   );
