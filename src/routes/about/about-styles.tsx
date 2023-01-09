@@ -14,6 +14,9 @@ export const AboutBody = styled.div`
     display: flex;
     flex-direction: row;
     padding: 10px;
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+    }
 `
 
 export const AboutDescription = styled.div`
@@ -29,6 +32,7 @@ export const AboutImg = styled.img`
     height: 600px;
     object-fit: cover;
     object-position: center;
+
 `
 
 export const AboutImgContainer = styled.div`
