@@ -17,7 +17,6 @@ export const GlobalStyle = createGlobalStyle`
     a {
     text-decoration: none;
     color: black;
-    padding-right: 10px;
     }
 
     * {
