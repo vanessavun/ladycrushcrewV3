@@ -12,6 +12,12 @@ export const NavigationContainer = styled.div`
     display: flex;
     justify-content: space-between;
     padding: 5px;
+
+    @media screen and (max-width: 600px) {
+        padding: 0;
+        height: fit-content;
+        align-items: center;
+    }
 `
 
 export const LogoContainer = styled(Link)`
@@ -19,21 +25,28 @@ export const LogoContainer = styled(Link)`
 `
 
 export const NavLinks = styled.div`
-    max-width: 50%;
-    min-width: 400px;
+    width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     font-weight: bold;
+    text-align: center;
+
+    @media screen and (max-width: 600px) {
+        padding: 2px;
+    }
 `
 
 export const NavLink = styled(Link)`
-    margin: 0;
+
     padding: 0 5px;
     cursor: pointer;
     &:hover {
         color: #89b0ae;
+    }
+    @media screen and (max-width: 600px) {
+        font-size: small;
     }
 `
 

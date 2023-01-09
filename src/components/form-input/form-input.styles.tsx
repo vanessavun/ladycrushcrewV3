@@ -24,6 +24,10 @@ export const FormInputLabel = styled.label<FormInputLabelProps>`
     transition: 300ms ease all;
 
     ${({shrink}) => shrink && shrinkLabelStyles};
+
+    @media screen and (max-width: 600px) {
+        font-size: 14px;
+    }
 `;
 
 export const Input = styled.input`

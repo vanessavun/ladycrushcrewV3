@@ -16,11 +16,12 @@ export const AboutBody = styled.div`
     padding: 10px;
     @media screen and (max-width: 600px) {
         flex-direction: column;
+        font-size: small;
+        width: 100%;
     }
 `
 
 export const AboutDescription = styled.div`
-    margin: 10px;
     padding: 10px;
     min-width: 300px;
     width: 100%;

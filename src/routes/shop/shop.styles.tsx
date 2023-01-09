@@ -8,11 +8,16 @@ export const ProductsContainer = styled.div`
 `
 
 export const ShopHeader = styled.div`
-    width: 60%;
+    width: 80%;
     max-width: 700px;
     display: flex;
     flex-direction: column;
     padding-bottom: 20px;
+
+    @media screen and (max-width: 600px) {
+      font-size: small;
+      width: 90%;
+    }
 `
 
 export const ShopContainer = styled.div`
