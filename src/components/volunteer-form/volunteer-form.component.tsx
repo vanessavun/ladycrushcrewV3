@@ -55,7 +55,7 @@ function VolunteerForm() {
             value={location}
           />
           <FormInput
-            label="Why do you want to be a LADY CRUSH CREW Ambassador?"
+            label="Why do you want to be an ambassador?"
             type="text"
             required
             onChange={handleChange}
