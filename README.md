@@ -8,12 +8,7 @@ For an easier business transaction for the shop, I created the Squarespace websi
 
 This project is the next step in creating the website from scratch through React and Typescript.
 
-## Installation
-```base
-yarn 
-```
-
-## Lessons learned
+## Features
 
 * React Routing
 * State management with Redux, Saga
@@ -22,7 +17,6 @@ yarn
 * Firebase database storage
 * Observer pattern
 * Performance optimizations (caching items in the cart)
-* How to organize code as the code base gets bigger
 
 ## Full List of Technologies and Tools
 
@@ -37,3 +31,24 @@ yarn
 * Sass
 * React-Awesome-Reveal
 
+## Installation
+```base
+yarn 
+```
+
+## Local development
+```base
+yarn start
+```
+
+## To Contribute
+* Check out Issues page
+* Submit comment if interested in contributing
+* Fork respository
+* Install dependencies using yarn:
+```base
+yarn 
+```
+* Make changes locally, commit, push
+* Create pull request when feature or fix is done
+* I will review pull requests and merge when it's ok
