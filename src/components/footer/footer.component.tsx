@@ -24,7 +24,7 @@ function Footer() {
             <h4>Links</h4>
             <Link to='/events'>Events</Link>
             <Link to='/volunteer'>Volunteer</Link>
-            <Link to='/shop'>Shop</Link>
+            <a href="https://ladycrushcrew.square.site/" target="_blank" rel="noreferrer">Shop</a>
           </Column>
           <Column>
             <h4>Contact Us</h4>
