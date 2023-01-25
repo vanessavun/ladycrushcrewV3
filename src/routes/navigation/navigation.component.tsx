@@ -1,8 +1,8 @@
 import { Fragment } from "react";
-import { Outlet } from "react-router-dom"
+import { Outlet } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 
-import LCCLogo from '../../assets/logo.png';
+import LCCLogo from "../../assets/logo.png";
 import CartIcon from "../../components/cart-icon/cart-icon.component";
 import CartDropDown from "../../components/cart-dropdown/cart-dropdown.component";
 
@@ -15,7 +15,8 @@ import {
   NavLinks,
   NavLink,
   LogoContainer,
-  Logo
+  Logo,
+  ExtLink,
 } from "./navigation.styles";
 
 const Navigation = () => {
@@ -34,7 +35,14 @@ const Navigation = () => {
           <NavLink to="/about">ABOUT</NavLink>
           <NavLink to="/events">EVENTS</NavLink>
           <NavLink to="/volunteer">VOLUNTEER</NavLink>
-          <NavLink to="/shop">SHOP</NavLink>
+          {/* <NavLink to="/shop">SHOP</NavLink> */}
+          <ExtLink
+            href="https://ladycrushcrew.square.site/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            SHOP
+          </ExtLink>
           {currentUser ? (
             <NavLink as="span" onClick={signOutUser}>
               SIGN OUT
@@ -42,9 +50,9 @@ const Navigation = () => {
           ) : (
             <NavLink to="/auth">SIGN IN</NavLink>
           )}
-          <CartIcon />
+          {/* <CartIcon /> */}
         </NavLinks>
-        {isCartOpen && <CartDropDown />}
+        {/* {isCartOpen && <CartDropDown />} */}
       </NavigationContainer>
       <Outlet />
     </Fragment>

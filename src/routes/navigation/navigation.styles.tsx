@@ -50,3 +50,14 @@ export const NavLink = styled(Link)`
     }
 `
 
+export const ExtLink = styled.a`
+    padding: 0 5px;
+    cursor: pointer;
+    &:hover {
+        color: #89b0ae;
+    }
+    @media screen and (max-width: 600px) {
+        font-size: small;
+    }
+`
+
