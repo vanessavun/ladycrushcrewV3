@@ -18,7 +18,8 @@ const DirectoryItem: FC<DirectoryItemProps> = ({ category }) => {
   const { imageUrl, title, route } = category;
   const navigate = useNavigate();
 
-  const onNavigateHandler = () => navigate(route);
+  // const onNavigateHandler = () => navigate(route);
+  const onNavigateHandler = () => window.open("https://ladycrushcrew.square.site/", '_blank');
 
   return (
     <DirectoryItemContainer onClick={onNavigateHandler}>
