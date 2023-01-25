@@ -34,14 +34,6 @@ const firebaseConfig = {
   measurementId: "G-P3XLR919JW"
 };
 
-// const firebaseConfig = {
-//   apiKey: "AIzaSyCio8-Xn1Bmb9uJs2eOaf-TkuiupphHiuU",
-//   authDomain: "crwn-clothing-db-93df5.firebaseapp.com",
-//   projectId: "crwn-clothing-db-93df5",
-//   storageBucket: "crwn-clothing-db-93df5.appspot.com",
-//   messagingSenderId: "680742435266",
-//   appId: "1:680742435266:web:a037e9081b3e009621fe5b"
-// };
 const firebaseApp = initializeApp(firebaseConfig);
 
 //GOOGLE PROVIDER WITH POPUP AND WITH REDIRECT
