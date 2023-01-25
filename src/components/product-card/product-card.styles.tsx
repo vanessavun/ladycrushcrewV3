@@ -18,7 +18,7 @@ export const ProductCardContainer = styled.div`
   }
 
   button {
-    width: 80%;
+    width: 85%;
     opacity: 0.7;
     position: absolute;
     top: 250px;
@@ -41,7 +41,8 @@ export const ProductCardContainer = styled.div`
       display: flex;
       opacity: 1;
       top: 60%;
-      font-size: small;
+      font-size: smaller;
+      padding: 0;
     }
     height: 300px;
   }
